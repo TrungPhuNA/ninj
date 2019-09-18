@@ -31,8 +31,9 @@ class HomeController extends Controller
             'show_random_bar' => true,
             'seo_title' => setting('site.title') . ' - ' . setting('site.description'),
             'seo_description' => setting('site.description'),
-            'seo_image' => url(theme('social_share_image'))
+            'seo_image' => ''
         );
+
 
         return view('theme::home', $data);
     }
